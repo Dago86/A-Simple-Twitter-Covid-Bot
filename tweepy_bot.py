@@ -40,9 +40,9 @@ def timed_job():
     df = df.drop('north_america', axis=1)
     df = df.drop('south_america', axis=1)
     df = df.drop('asia', axis=1)
-    df['COLUMN_I_WANT_TO_CREATE'] = df.idxmax(axis=1)
+    df['COVID_NATION'] = df.idxmax(axis=1)
     most_cases_nation = df['COLUMN_I_WANT_TO_CREATE']
-    worst = df['COLUMN_I_WANT_TO_CREATE'].values
+    worst = df['COVID_NATION'].values
     print(worst)
     print(df[worst].values)
     api.update_status("CovidBot! The country that has more infections today " + data + " : " + worst + ", is " + str(df[worst].values) +"   #covid" )
