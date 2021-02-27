@@ -32,6 +32,8 @@ def timed_job():
     df = pd.read_csv(StringIO(r.text), sep=",")
     data = df['date'].values
     print("Date from df: ", data)
+    
+    #Drop this columns if your interested just in country and not in continents
     df = df.drop('world', axis=1)
     df = df.drop('date', axis=1)
     df = df.drop('date_2', axis=1)
