@@ -8,11 +8,11 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 
 
 
-consumer_key_apikey='HpmqAfVOB8kPf8zYJhGQ8pqSx'
-consumer_secret='4nIEX7lnngFHtY60dMTRjesogAXJKuJF71cTA1GIWXn2vTPR2f'
+consumer_key_apikey=''
+consumer_secret=''
 
-access_token='2739037084-oFuQL2TOYZOYmiZ3XnyyuabXZkatJ7XMm8ygIZt'
-access_token_secret='1TS3FKODyJnxSK7N9mXMdNeUoXkH1sPUmNVeyfI0lKYMv'
+access_token=''
+access_token_secret=''
 
 auth = tweepy.OAuthHandler(consumer_key_apikey, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
